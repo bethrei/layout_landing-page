@@ -24,12 +24,7 @@
 
   &__bottom {
     padding-bottom: 40px;
-    @include contentPaddingInline;
+
+    @include content-padding-inline;
   }
 }
-
-
-
-
-
-
