@@ -8,21 +8,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: white;
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+    @include contentPaddingInline;
+  }
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  color: white;
-}
 
-.header__bottom {
-  padding: 0 20px 40px;
-}
+
+
+
