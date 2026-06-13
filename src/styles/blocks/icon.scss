@@ -1,12 +1,16 @@
+@use '../utils/mixins';
+
 .icon {
   display: block;
   height: 24px;
   width: 24px;
   background-size: cover;
 
-  @include hover(transform, scale(1.2));
+  @include mixins.hover {
+    transform: scale(1.2);
+  }
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     height: 32px;
     width: 32px;
   }
